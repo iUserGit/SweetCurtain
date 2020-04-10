@@ -101,7 +101,7 @@ open class CurtainController: UIViewController {
     open var curtainViewController: UIViewController { children[1] }
     
     //MARK: Private computed properties
-    private var topMostScrollView: UIScrollView?
+    private weak var topMostScrollView: UIScrollView?
     
     //MARK: Lifecycle
     ///Initializes and returns a newly created curtain controller.
